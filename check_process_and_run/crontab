@@ -1,0 +1,9 @@
+# mysql check and start
+*/10 * * * * /app/myapp/shell/myapp_check.sh mysql -cron
+*/5 * * * * /app/myapp/shell/db_check.sh
+
+# glassfish check and start
+*/10 * * * * /app/myapp/shell/myapp_check.sh glassfish -cron
+
+# nginx check and start
+*/10 * * * * /app/myapp/shell/myapp_check.sh nginx -cron
